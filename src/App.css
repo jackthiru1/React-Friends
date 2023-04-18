@@ -8,6 +8,15 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.heading {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+  color: #10ff8c;
+  margin-bottom: 20px;
+}
+
 .inputs {
   height: 400px;
   width: 100%;

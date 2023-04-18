@@ -59,6 +59,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className="heading">Birthday Tracker</h1>
       <div className="inputs">
         <input
           type="text"

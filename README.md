@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Birthday Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Birthday Tracker is a simple web app that allows users to add, update, and delete their friends' names and birthdays. The app is built using React for the front end, Express and MongoDB for the back end, and MongoDB Atlas for database hosting.
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+You can access the deployed web app at [your-deployed-web-address](your-deployed-web-address).
 
-### `npm start`
+## Dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- axios: For making HTTP requests from the front end to the back end
+- express: For creating a simple server to handle API requests
+- mongoose: For creating models and connecting to MongoDB
+- MongoDB Atlas: For hosting the MongoDB database
+- body-parser: For parsing request bodies in Express
+- cors: For enabling Cross-Origin Resource Sharing (CORS) support
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Add a friend's name and birthday
+- Update a friend's birthday
+- Delete a friend's entry
+- Display a list of friends and their birthdays
+- Simple animations and transitions for a smoother user experience
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## API Endpoints
 
-### `npm run build`
+- POST `/addfriend`: Add a new friend to the database
+- GET `/read`: Get the list of friends from the database
+- PUT `/update`: Update a friend's birthday in the database
+- DELETE `/delete/:id`: Delete a friend's entry from the database
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Local Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository
+2. Install dependencies for both the front end and back end:
