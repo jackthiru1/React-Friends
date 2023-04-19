@@ -4,7 +4,7 @@ Birthday Tracker is a simple web app that allows users to add, update, and delet
 
 ## Live Demo
 
-You can access the deployed web app at [your-deployed-web-address](your-deployed-web-address).
+You can access the deployed web app at [http://jackthiru1.github.io/React-Friends](http://jackthiru1.github.io/React-Friends).
 
 ## Dependencies
 
@@ -30,7 +30,4 @@ You can access the deployed web app at [your-deployed-web-address](your-deployed
 - PUT `/update`: Update a friend's birthday in the database
 - DELETE `/delete/:id`: Delete a friend's entry from the database
 
-## Local Setup
 
-1. Clone the repository
-2. Install dependencies for both the front end and back end:
