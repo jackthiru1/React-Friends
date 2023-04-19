@@ -8,7 +8,7 @@ function App() {
   const [listOfFriends, setListOfFriends] = useState([]);
 
   const addFriend = () => {
-    Axios.post("http://localhost:3001/addfriend", {
+    Axios.post("https://react-friends.onrender.com/addfriend", {
       name: name,
       birthdate: birthdate,
     }).then((response) => {
@@ -22,7 +22,7 @@ function App() {
   const updateFriend = (id) => {
     const newBirthdate = prompt("Enter new birthdate (YYYY-MM-DD): ");
 
-    Axios.put("http://localhost:3001/update", {
+    Axios.put("https://react-friends.onrender.com/update", {
       newBirthdate: newBirthdate,
       id: id,
     }).then(() => {
@@ -37,7 +37,7 @@ function App() {
   };
 
   const deleteFriend = (id) => {
-    Axios.delete(`http://localhost:3001/delete/${id}`).then(
+    Axios.delete(`https://react-friends.onrender.com/delete/${id}`).then(
       () => {
         setListOfFriends(
           listOfFriends.filter((val) => {
@@ -48,7 +48,7 @@ function App() {
   };
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/read")
+    Axios.get("https://react-friends.onrender.com/read")
       .then((response) => {
         setListOfFriends(response.data);
       })
